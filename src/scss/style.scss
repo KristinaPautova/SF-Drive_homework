@@ -1,35 +1,6 @@
-@font-face {
-    font-family: "Gilroy";
-    src: url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), 
-         url("../fonts/Gilroy-Medium.woff") format("woff"), 
-         url("../fonts/Gilroy-Medium.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Gilroy";
-    src: url("../fonts/Gilroy-MediumItalic.eot?#iefix") format("embedded-opentype"), 
-         url("../fonts/Gilroy-MediumItalic.woff") format("woff"), 
-         url("../fonts/Gilroy-MediumItalic.ttf") format("truetype");
-    font-weight: normal;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: "Gilroy";
-    src: url("../fonts/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), 
-         url("../fonts/Gilroy-SemiBold.woff") format("woff"), 
-         url("../fonts/Gilroy-SemiBold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Gilroy";
-    src: url("../fonts/Gilroy-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), 
-         url("../fonts/Gilroy-SemiBoldItalic.woff") format("woff"), 
-         url("../fonts/Gilroy-SemiBoldItalic.ttf") format("truetype");
-    font-weight: bold;
-    font-style: italic;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+
+
  /* icons */
 
 
@@ -56,6 +27,35 @@
 .icon-instagram:before{content:'\0042';}
 .icon-facebook:before{content:'\0043';}
 
+  /*variables */
+
+  $black: #1B1B1B;;
+  $grey: #828282;
+  $lightgrey: #F7F9FB;
+  $blackgrey: #4F4F4F;
+  $white: #FFFFFF;
+  $purple: #3F3D56;
+
+  /* mixsins */
+
+  @mixin breakpoint($point){
+      @if $point == large {
+          @media screen and (min-width: 1200px){
+              @content;
+          }
+      }
+      @else if $point == medium {
+        @media screen and (max-width: 1199px){
+            @content;
+        } 
+      }
+      @else if $point == small {
+        @media screen and (max-width: 767px){
+            @content;
+        } 
+      }
+  }
+
 /* normalize.css */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -81,6 +81,11 @@
   
   body {
     margin: 0;
+    font-family: Roboto;
+    // font-size: 24px;
+    color: $black;
+    // font-size: 24px;
+    // line-height: 147.3%;
   }
   
   /**
@@ -97,8 +102,18 @@
    */
   
   h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 76.8px;
+    margin: 60px auto 30px;
+  }
+
+  h2, h3 {
+    font-weight: bold;
+    // padding: 30px 0;
+    font-size: 48px;
+    line-height: 57.6px;
+    margin: 80px auto 20px;
   }
   
   /* Grouping content
@@ -114,6 +129,8 @@
     height: 0; /* 1 */
     overflow: visible; /* 2 */
   }
+
+
   
   /**
    * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -134,6 +151,7 @@
   
   a {
     background-color: transparent;
+    color: $black;
   }
   
   /**
@@ -406,3 +424,204 @@
   [hidden] {
     display: none;
   }
+
+
+
+  /* generic */
+
+  .is-animated {
+      transition: all 400ms ease;
+  }
+
+  .content__container {
+      margin: 0 auto;
+
+      &.is-align-center {
+          text-align: center;
+      }
+    // @include breakpoint(large) {
+    //     width: 944px;
+    // } 
+
+    @include breakpoint(medium) {
+        width: 100%;
+    }
+  }
+
+  section {
+
+      &.is-grey{
+          background: $lightgrey;
+      }
+  }
+
+/* header */
+
+
+.menu__frame{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding: 35px 40px 110px 40px;
+    
+
+    &-link{
+        padding: 0px 15px;
+        text-decoration: none;
+
+        &:hover {
+            color: $grey;
+        }
+    }
+
+    &-site{
+        margin-right: auto;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: -4px;
+        font-size: 24px;
+        line-height: 29px;
+        &:hover {
+          color: $grey;
+      }
+    }
+
+    &-button{
+      cursor:pointer;
+      margin-top: -12px;
+      margin-left: 25px;
+      background: $white;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500;
+      border-radius: 6px;
+      border: 1px solid rgb(27, 27, 27, 0.4);
+      box-sizing: border-box;
+      padding: 12px 30px;
+
+      &:hover {
+        background: $lightgrey;
+    }
+    }
+}
+
+
+ /* contact */
+
+ .contacts__frame {
+   padding-bottom: 100px;
+
+   a:hover {
+    color: $grey;
+   }
+
+   h2{
+     padding-top: 80px;
+     margin-bottom: 40px;
+   }
+  
+  &-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    &-item{
+      margin: 0px 70px;
+      width: 264px;
+      min-width: 200px;
+    }
+
+  }
+ }
+.vertical_separator{
+  width: 1px;
+  min-width: 1px;
+  height: 62px;
+  background: #C8C8CF;
+}
+
+.contact_type {
+  color: $blackgrey;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.contact_info {
+  text-decoration: none;
+  color: $black;
+  font-size: 20px;
+  margin-top: 6px;
+  line-height: 29px;
+
+}
+
+.about__frame{
+
+  &-text{
+    width: 925px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height:35.35px;
+  }
+}
+
+.team__frame{
+  max-width: 1100px;
+  margin: 0 auto;
+  &-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 80px;
+    &-item{
+      margin: 30px 40px;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+    &-name{
+      font-size: 20px;
+      line-height: 29.46px;
+      padding: 23px 0 8px 0;
+      font-weight: 500;
+    }
+
+    &-job{
+      color: $blackgrey;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
+
+/* footer */
+
+.footer__frame{
+     background:$purple;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: flex-end;
+     padding: 49px;
+
+     &-socials{
+      font-size: 27px;
+      line-height: 27px;
+         a{
+             padding: 0px 9px;
+             color: $white;
+
+           &:hover {
+              color: $grey;
+               }
+          }
+     }
+
+     &-copy{
+      margin-right: auto;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 19px;
+      color: rgb(255, 255, 255, 0.4);
+     }
+}

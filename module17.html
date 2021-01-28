@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,77 +10,84 @@
     <header>
         <nav class="menu__frame">
            <a class="menu__frame-site" href="">SkillDrive</a>
-           <a class="menu__frame-link is-active" href="">О нас</a>
-           <a class="menu__frame-link" href="">Условия</a>
-           <a class="menu__frame-link" href="">Частые вопросы</a>
-           <button class="menu__frame-button">Войти</button>
+           <a class="menu__frame-link is-animated is-active" href="">О нас</a>
+           <a class="menu__frame-link is-animated" href="">Условия</a>
+           <a class="menu__frame-link is-animated" href="">Частые вопросы</a>
+           <button class="menu__frame-button is-animated">Войти</button>
         </nav>
     </header>
     <main>
         <section class="about__frame">
+            <div class="content__container is-align-center">
             <img src="src/img/header.svg" alt="four people stand with a dog" />
             <h1 >О нас</h1>
+            <div class="about__frame-text">
             <p>Это учебный проект, созданный с целью получения боевого опыта в разработке
                  настоящего живого веб-приложения. Этот сервис имитирует работу каршеринга,
                  в котором можно не только арендовать автомобили, но и сдавать их в аренду.</p>
+             </div>
+            </div>
         </section>
-        <section class="contacts__frame">
+        <section class="contacts__frame is-grey">
+          <div class="content__container is-align-center">
             <h2>Контакты</h2>
             <div class="contacts__frame-wrapper">
                 <div class="contacts__frame-wrapper-item">
-                    <div>Электронная почта</div>
-                    <a href="drive@skillfactory.com" target="_blank" rel="nofollow">drive@skillfactory.com</a>
+                    <div class="contact_type" >Электронная почта</div>
+                    <a class="contact_info is-animated" href="drive@skillfactory.com" target="_blank" rel="nofollow">drive@skillfactory.com</a>
                 </div>
+                <div class="vertical_separator"></div>
                 <div class="contacts__frame-wrapper-item">
-                    <div>Телефон</div>
-                    <div>+7 912 123-45-67</div>
+                    <div class="contact_type">Телефон</div>
+                    <div class="contact_info">+7 912 123-45-67</div>
                 </div>
-            </div>
+              </div>
+          </div>
         </section>
         <section class="team__frame">
+         <div class="content__container is-align-center">
             <h2>Команда</h2>
             <div class="team__frame-wrapper">
                 <div class="team__frame-wrapper-item">
                     <img src="src/img/people/1.jpeg" alt="face Ivan Ivanov">
-                    <div>Иван Иванов</div>
-                    <div>СЕО</div>
+                    <div class="team__frame-wrapper-name">Иван Иванов</div>
+                    <div class="team__frame-wrapper-job">СЕО</div>
                 </div>
                 <div class="team__frame-wrapper-item">
                     <img src="src/img/people/2.jpeg" alt="face Alexey Smirnov">
-                    <div>Алексей Смирнов</div>
-                    <div>Frontend-разработчик</div>
+                    <div class="team__frame-wrapper-name">Алексей Смирнов</div>
+                    <div class="team__frame-wrapper-job">Frontend-разработчик</div>
                 </div>
                 <div class="team__frame-wrapper-item">
                     <img src="src/img/people/3.jpeg" alt="face Denis Yartsev">
-                    <div>Денис Ярцев</div>
-                    <div>Backend-разработчик</div>
+                    <div class="team__frame-wrapper-name">Денис Ярцев</div>
+                    <div class="team__frame-wrapper-job">Backend-разработчик</div>
                 </div>
                 <div class="team__frame-wrapper-item">
                     <img src="src/img/people/4.jpeg" alt="face Nikolay Morozov">
-                    <div>Николай Морозов</div>
-                    <div>Дизайнер</div>
+                    <div class="team__frame-wrapper-name">Николай Морозов</div>
+                    <div class="team__frame-wrapper-job">Дизайнер</div>
                 </div>
-            </div>
-            <div class="team__frame-wrappertwo">
-                <div class="team__frame-wrappertwo-item">
+                <div class="team__frame-wrapper-item">
                     <img src="src/img/people/5.jpeg" alt="face Irina Deeva">
-                    <div>Ирина Деева</div>
-                    <div>Копирайтер</div>
+                    <div class="team__frame-wrapper-name">Ирина Деева</div>
+                    <div class="team__frame-wrapper-job">Копирайтер</div>
                 </div>
-                <div class="team__frame-wrappertwo-item">
+                <div class="team__frame-wrapper-item">
                     <img src="src/img/people/6.jpeg" alt="face Maria Strelkova">
-                    <div>Мария Стрелкова</div>
-                    <div>SMM</div>
+                    <div class="team__frame-wrapper-name">Мария Стрелкова</div>
+                    <div class="team__frame-wrapper-job">SMM</div>
                 </div>
             </div>
+        </div>  
         </section>
     </main>
     <footer class="footer__frame">
         <div class="footer__frame-copy">© SkillDrive Inc. 2020</div>
             <div class="footer__frame-socials">
-                <a href="" class="icon-vk" target="_blank" rel="nofollow"></a>
-                <a href="" class="icon-instagram" target="_blank" rel="nofollow"></a>
-                <a href="" class="icon-facebook" target="_blank" rel="nofollow"></a>
+                <a href="https://vk.com/" class="icon-vk is-animated" aria-labelledby="label-vk" target="_blank" rel="nofollow"></a>
+                <a href="https://www.instagram.com/" class="icon-instagram is-animated" aria-labelledby="label-instagram" target="_blank" rel="nofollow"></a>
+                <a href="https://www.facebook.com/" class="icon-facebook is-animated" aria-labelledby="label-facebook" target="_blank" rel="nofollow"></a>
             </div>
     </footer>    
 </body>
