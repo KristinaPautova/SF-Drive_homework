@@ -434,11 +434,17 @@
                 font-size: 20px;
                 line-height: 29px;
                 width: 784px;
-                box-align: left;
+                box-align: start;
+                padding-right: 190px;
+                text-align: left;
+
 
                 @include breakpoint (medium) {
                     font-size: 14px;
                     line-height: 21px;
+                    text-align: center;
+                    padding: 0 20px;
+                    margin: 0px 20px;
                 }
             }
         }
