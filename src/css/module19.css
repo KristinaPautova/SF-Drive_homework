@@ -359,6 +359,7 @@ fieldset {
 }
 @media screen and (max-width: 1199px) {
   .asked_questions__frame .team__frame-wrapper-item {
+    width: calc(100% - 20px);
     font-size: 14px;
     line-height: 21px;
   }
@@ -378,9 +379,9 @@ fieldset {
 }
 @media screen and (max-width: 1199px) {
   .asked_questions__frame .team__frame-wrapper-item button {
-    width: 335px;
     height: 50px;
     line-height: 23px;
+    width: calc(100% - 20px);
   }
 }
 .asked_questions__frame .team__frame-wrapper-item button:hover {
