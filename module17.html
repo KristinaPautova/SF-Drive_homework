@@ -8,12 +8,20 @@
 </head>
 <body>
     <header>
-        <nav class="menu__frame">
-           <a class="menu__frame-site" href="">SkillDrive</a>
+        <nav class="menu__frame is-desktop">
+           <a class="menu__frame-site" href=""><img src="src/img/logo.svg" alt="Logotype"></a>
            <a class="menu__frame-link is-animated is-active" href="">О нас</a>
            <a class="menu__frame-link is-animated" href="">Условия</a>
            <a class="menu__frame-link is-animated" href="">Частые вопросы</a>
            <button class="menu__frame-button is-animated">Войти</button>
+        </nav>
+        <nav class="menu__frame is-mobile">
+            <a class="menu__frame-site" href=""><img src="src/img/logo.svg" alt="Logotype"></a>
+            <div class="mobile__burger">
+                <div class="mobile__burger-item"></div>
+                <div class="mobile__burger-item"></div>
+                <div class="mobile__burger-item"></div>
+            </div>
         </nav>
     </header>
     <main>
@@ -36,7 +44,7 @@
                     <div class="contact_type" >Электронная почта</div>
                     <a class="contact_info is-animated" href="drive@skillfactory.com" target="_blank" rel="nofollow">drive@skillfactory.com</a>
                 </div>
-                <div class="vertical_separator"></div>
+                <div class="vertical_separator is-desktop"></div>
                 <div class="contacts__frame-wrapper-item">
                     <div class="contact_type">Телефон</div>
                     <div class="contact_info">+7 912 123-45-67</div>
@@ -49,32 +57,38 @@
             <h2>Команда</h2>
             <div class="team__frame-wrapper">
                 <div class="team__frame-wrapper-item">
-                    <img src="src/img/people/1.jpeg" alt="face Ivan Ivanov">
+                    <img src="src/img/people/1.jpg" class="is-desktop" alt="face Ivan Ivanov">
+                    <img src="src/img/people/1-xs.jpg" alt="face Ivan Ivanov" class="is-mobile">
                     <div class="team__frame-wrapper-name">Иван Иванов</div>
                     <div class="team__frame-wrapper-job">СЕО</div>
                 </div>
                 <div class="team__frame-wrapper-item">
-                    <img src="src/img/people/2.jpeg" alt="face Alexey Smirnov">
+                    <img src="src/img/people/2.jpg" class="is-desktop"alt="face Alexey Smirnov">
+                    <img src="src/img/people/2-xs.jpg" class="is-mobile" alt="face Alexey Smirnov">
                     <div class="team__frame-wrapper-name">Алексей Смирнов</div>
                     <div class="team__frame-wrapper-job">Frontend-разработчик</div>
                 </div>
                 <div class="team__frame-wrapper-item">
-                    <img src="src/img/people/3.jpeg" alt="face Denis Yartsev">
+                    <img src="src/img/people/3.jpg"class="is-desktop" alt="face Denis Yartsev">
+                    <img src="src/img/people/3-xs.jpg"class="is-mobile" alt="face Denis Yartsev">                  
                     <div class="team__frame-wrapper-name">Денис Ярцев</div>
                     <div class="team__frame-wrapper-job">Backend-разработчик</div>
                 </div>
                 <div class="team__frame-wrapper-item">
-                    <img src="src/img/people/4.jpeg" alt="face Nikolay Morozov">
+                    <img src="src/img/people/4.jpg" class="is-desktop"alt="face Nikolay Morozov">
+                    <img src="src/img/people/4-xs.jpg"class="is-mobile" alt="face Nikolay Morozov">
                     <div class="team__frame-wrapper-name">Николай Морозов</div>
                     <div class="team__frame-wrapper-job">Дизайнер</div>
                 </div>
                 <div class="team__frame-wrapper-item">
-                    <img src="src/img/people/5.jpeg" alt="face Irina Deeva">
+                    <img src="src/img/people/5.jpg"class="is-desktop" alt="face Irina Deeva">
+                    <img src="src/img/people/5-xs.jpg"class="is-mobile" alt="face Irina Deeva">
                     <div class="team__frame-wrapper-name">Ирина Деева</div>
                     <div class="team__frame-wrapper-job">Копирайтер</div>
                 </div>
                 <div class="team__frame-wrapper-item">
-                    <img src="src/img/people/6.jpeg" alt="face Maria Strelkova">
+                    <img src="src/img/people/6.jpg"class="is-desktop" alt="face Maria Strelkova">
+                    <img src="src/img/people/6-xs.jpg"class="is-mobile" alt="face Maria Strelkova">
                     <div class="team__frame-wrapper-name">Мария Стрелкова</div>
                     <div class="team__frame-wrapper-job">SMM</div>
                 </div>
@@ -89,6 +103,7 @@
                 <a href="https://www.instagram.com/" class="icon-instagram is-animated" aria-labelledby="label-instagram" target="_blank" rel="nofollow"></a>
                 <a href="https://www.facebook.com/" class="icon-facebook is-animated" aria-labelledby="label-facebook" target="_blank" rel="nofollow"></a>
             </div>
-    </footer>    
+    </footer>   
+    <noscript>Ваш браузер не поддерживает JavaScript!</noscript> 
 </body>
 </html> 

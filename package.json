@@ -1,0 +1,21 @@
+{
+  "name": "mod_17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "sass src/scss/style.scss src/css/module18.css",
+    "watch-sass": "sass --watch src/scss/style.scss:src/css/module18.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KristinaPautova/SF-Drive_homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KristinaPautova/SF-Drive_homework/issues"
+  },
+  "homepage": "https://github.com/KristinaPautova/SF-Drive_homework#readme"
+}
