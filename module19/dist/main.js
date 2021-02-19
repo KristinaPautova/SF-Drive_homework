@@ -1,0 +1,1 @@
+(()=>{var o,g;console.log((o=4,g=5,o+g).toString())})();
