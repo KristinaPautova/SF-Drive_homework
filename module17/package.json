@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile-sass": "sass src/scss/style.scss src/css/module18.css",
     "watch-sass": "sass --watch src/scss/style.scss:src/css/module18.css",
-    "build": "webpack"
+    "build": "webpack",
+    "start:dev": "npx webpack-cli serve"
   },
   "repository": {
     "type": "git",
@@ -21,13 +22,15 @@
   "homepage": "https://github.com/KristinaPautova/SF-Drive_homework#readme",
   "devDependencies": {
     "css-loader": "^5.0.2",
+    "html-webpack-plugin": "^5.2.0",
     "mini-css-extract-plugin": "^1.3.8",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^5.1.1",
-    "webpack": "^5.23.0",
-    "webpack-cli": "^4.5.0"
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {}
 }

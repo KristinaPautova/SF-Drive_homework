@@ -9,8 +9,17 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: 'index.js'
     },
-    mode: 'production',
+    mode: 'development',
 	plugins: [new MiniCssExtractPlugin()],
+	devServer: {
+		  contentBase: './dist',
+		  port: 3001,
+		  stats: {
+			  children: false,
+			  maxModules: 0
+		  },
+		  hot: true
+	},
 	module: {
 		rules: [
 	      {

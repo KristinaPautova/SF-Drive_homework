@@ -1,3 +1,6 @@
-// import './css/module19.css';
+import React from "react";
+import ReactDOM from "react-dom";
 
-console.log('Hello, world!!! \n');
+import App from "./components/App"
+
+ReactDOM.render(<App/>, document.getElementById("root"))
